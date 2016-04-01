@@ -5,17 +5,12 @@ db:
     - /etc/localtime:/etc/localtime:ro
 app:
   build: app
+  ports:
+    - 80:80
   links:
     - db:db
   volumes:
     - ./volumes/app/mattermost/config:/mattermost/config:rw
     - ./volumes/app/mattermost/data:/mattermost/data:rw
     - /etc/localtime:/etc/localtime:ro
-web:
-  build: web
-  ports:
-    - "443:443"
-  links:
-    - app:platform
-  volumes:
-    - /etc/localtime:/etc/localtime:ro
+
