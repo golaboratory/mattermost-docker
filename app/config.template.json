@@ -1,7 +1,7 @@
 {
     "ServiceSettings": {
         "ListenAddress": ":80",
-        "MaximumLoginAttempts": 10,
+        "MaximumLoginAttempts": 100,
         "SegmentDeveloperKey": "",
         "GoogleDeveloperKey": "",
         "EnableOAuthServiceProvider": false,
@@ -80,7 +80,7 @@
         "VaryByHeader": ""
     },
     "PrivacySettings": {
-        "ShowEmailAddress": true,
+        "ShowEmailAddress": false,
         "ShowFullName": true
     },
     "GitLabSettings": {
